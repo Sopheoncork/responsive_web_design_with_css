@@ -1,0 +1,66 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    color: rgba(255, 255,255, .8);
+
+/* RGBA color values are an extension of RGB color values with an alpha channel - 
+which specifies the opacity for a color. 
+An RGBA color value is specified with: rgba(red, green, blue, alpha).*/
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e84610;
+    padding: 15px 25px;
+}
+
+.main {
+    height: 100%;
+}
+
+.section {
+    background-color: #0097d3;
+    height: 100%;
+}
+
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* NB - a trick to Vertical align anything */
+}
+
+.section-paragraph {
+    font-size: 1em;
+    
+    /* The em size:
+    1em is equal to the current font size. 
+    The default text size in browsers is 16px. 
+    So, the default size of 1em is 16px. */
+    margin: 25px;
+}
+
+.footer {
+    background-color: #4a4a4f;
+    padding: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .column {
+        float: left;
+    }
+    
+    .column-60 {
+        width: 60%;
+    }
+    
+    .column-40 {
+        width: 40%;
+    }
+}
